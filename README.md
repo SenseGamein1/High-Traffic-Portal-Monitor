@@ -3,6 +3,8 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Selenium](https://img.shields.io/badge/-selenium-%2343B02A?style=for-the-badge&logo=selenium&logoColor=white) 
 
 A robust, multi-threaded web monitor built in Python. It constantly evaluates a target URL and uses JavaScript DOM inspection to ensure the page that loaded is the **actual functioning page**, bypassing server crash errors completely.
+The script works by looking for specific "Trigger Words" that only appear when a page successfully loads, while ignoring error pages (like 502/503 errors)
+**[Check Generalization instructions below to costamize these words and the website you need]**
 
 ## 🎯 Motivation: Why This Exists
 
@@ -34,4 +36,29 @@ ps: this app also helps you knwo when a newly made or down site comes back live
 1. Click the link above to download the script.
 2. Extract the `.zip` file to your preferred folder.
 3. Open your terminal or command prompt in that(inside the main forlder) folder.
-4. Run the program using: `python cbse_login.py`
+4. Run the program using: `portal_monitor.py`
+
+## 🛠️ Customizing for Other Websites (Generalization)
+Out of the box, this script is configured to monitor the **CBSE Academic Results Portal**. However, you can easily repurpose it to monitor **any** website—like sneaker drops, concert ticket queues (Ticketmaster), university portals, or flash sales.
+
+The script works by looking for specific "Trigger Words" that only appear when a page successfully loads, while ignoring error pages (like 502/503 errors).
+
+### How to Edit the Code for Your Needs:
+Open the `portal_monitor.py` file in any text editor (like Notepad, VS Code, or Python IDLE). Scroll to the **`CONFIG`** section near the very top of the script (around Line 23). 
+
+You only need to change two variables:
+
+**1. `TARGET_URL`**
+Change this to the exact link of the page you want to monitor.
+* *Example:* `TARGET_URL = "https://store.taylorswift.com/collections/new-merch"`
+
+**2. `TRIGGER_WORDS`**
+Change these words to terms that will **only** appear on the screen when the page successfully loads. 
+* *Note on Case-Sensitivity:* This list is **case-insensitive**. You don't need to worry about perfect capitalization; "checkout", "Checkout", and "CHECKOUT" will all work.
+* *Example for E-commerce:* ```python
+  TRIGGER_WORDS = [
+      "Add to Cart",
+      "Buy Now",
+      "Checkout",
+      "In Stock"
+  ]
