@@ -20,10 +20,10 @@ ps: this app also helps you knwo when a newly made or down site comes back live
 
 * **🧠 Intelligent Page Evaluation**: Avoids false positives. It injects a snapshot script to check for visible password inputs, text fields, submit buttons, and predefined trigger words.
 * **🧵 Multi-Session Staggering**: Spawns 3 independent Chrome instances that refresh on a staggered timeline (e.g., 1.5 seconds apart), maximizing the chances of slipping through server bottlenecks.
-* **🔊 Audio-Visual Alerts**: Triggers system-level message boxes and audio beeps the second the page is genuinely live[cite: 2].
-* **📸 Auto-Screenshot**: Automatically captures and saves a `.png` snapshot (`cbse_success.png`) of the successful page load[cite: 2].
-* **⚙️ Auto-Dependency Resolution**: If you don't have Selenium installed, the script will automatically run `pip install selenium` for you on startup[cite: 2].
-* **🪶 Resource Optimized**: Disables images, fonts, GPU, and extensions to keep memory usage low while running multiple instances[cite: 2].
+* **🔊 Audio-Visual Alerts**: Triggers system-level message boxes and audio beeps the second the page is genuinely live.
+* **📸 Auto-Screenshot**: Automatically captures and saves a `.png` snapshot (`cbse_success.png`) of the successful page load.
+* **⚙️ Auto-Dependency Resolution**: If you don't have Selenium installed, the script will automatically run `pip install selenium` for you on startup.
+* **🪶 Resource Optimized**: Disables images, fonts, GPU, and extensions to keep memory usage low while running multiple instances.
 
 ## 🚀 Getting Started
 
