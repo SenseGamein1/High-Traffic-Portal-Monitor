@@ -3,8 +3,10 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Selenium](https://img.shields.io/badge/-selenium-%2343B02A?style=for-the-badge&logo=selenium&logoColor=white) 
 
 A robust, multi-threaded web monitor built in Python. It constantly evaluates a target URL and uses JavaScript DOM inspection to ensure the page that loaded is the **actual functioning page**, bypassing server crash errors completely.
+
 The script works by looking for specific "Trigger Words" that only appear when a page successfully loads, while ignoring error pages (like 502/503 errors)
-**[Check Generalization instructions below to costamize these words and the website you need]**
+
+**[Check Generalization instructions below to customize these words and the website you need]**
 
 ## 🎯 Motivation: Why This Exists
 
