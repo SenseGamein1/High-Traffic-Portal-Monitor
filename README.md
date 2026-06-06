@@ -57,10 +57,10 @@ Change this to the exact link of the page you want to monitor.
 **2. `TRIGGER_WORDS`**
 Change these words to terms that will **only** appear on the screen when the page successfully loads. 
 * *Note on Case-Sensitivity:* This list is **case-insensitive**. You don't need to worry about perfect capitalization; "checkout", "Checkout", and "CHECKOUT" will all work.
-* *Example for E-commerce:* ```python
+* *Example for E-commerce:* `python
   TRIGGER_WORDS = [
       "Add to Cart",
       "Buy Now",
       "Checkout",
       "In Stock"
-  ]
+  ]`
